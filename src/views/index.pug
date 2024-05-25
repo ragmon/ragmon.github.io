@@ -1,0 +1,68 @@
+extends ../layouts/default
+
+mixin competency(competency)
+    .competency
+        h6= competency.title
+        p= competency.description
+
+mixin socialLink(link)
+    .social-icon
+        a(href=link.href, target="_blank")
+            i(class=`fab fa-${link.icon}`)
+
+mixin portfolio(project)
+    a(href=project.url).card
+        img.card-img-top(src=project.logo, alt=project.logoAlt)
+        .card-body
+            h5.card-title= project.title
+            p.card-text= project.description
+
+mixin skill(skill)
+    .skill
+        img(src=`@images/skills/${skill.toLowerCase()}.svg`, alt=skill)
+
+block content
+    section#about
+        .container
+            .row.justify-content-center
+                div
+                    h2 About
+                    p.text-muted
+                        | With over 8 years of freelance experience, I specialize in backend web development using PHP,
+                        | Laravel, Lumen, NodeJS, NestJS, TypeScript, and JavaScript. My focus is on delivering high-quality work
+                        | efficiently, whether it's developing high-traffic systems, microservices architecture, or SaaS/PaaS solutions. I
+                        | prioritize both quality and speed, leveraging existing solutions when feasible, and can also take on
+                        | Team
+                        | Lead responsibilities. Constantly evolving, I stay updated with industry trends, offering
+                        | comprehensive
+                        | solutions that include design, architecture, and ongoing support.
+
+    section#portfolio
+        .container
+            h2 Portfolio
+            .row.justify-content-center
+                each project in portfolioItems
+                    .col-md-4
+                        +portfolio(project)
+
+    section#competencies
+        .container
+            h2 My Competencies
+            .row.justify-content-center
+                each competency in competencies
+                    .col-md-6
+                        +competency(competency)
+
+    section#skills
+        .container
+            h2 Skills
+            .skill-grid
+                each skill in skills
+                    +skill(skill)
+
+    section#social-links-section
+        .container
+            h2 Links
+            .social-icons
+                each link in socialLinks
+                    +socialLink(link)

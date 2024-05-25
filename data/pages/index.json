@@ -1,0 +1,61 @@
+{
+  "skills": ["PHP", "JavaScript", "MySQL", "PostgreSQL", "TypeScript", "API", "Docker", "Github", "Grafana", "Html", "CSS", "Laravel", "NestJS", "NPM", "OpenAI", "PHPStorm", "VueJS", "Gitlab"],
+  "socialLinks": [{"href": "https://github.com/ragmon", "icon": "github", "text": "GitHub"}, {"href": "https://www.linkedin.com/in/arthur-rahimov/", "icon": "linkedin", "text": "Linkedin"}, {"href": "https://wa.me/+31629182760", "icon": "whatsapp", "text": "WhatsApp"}, {"href": "https://t.me/arthur_rahimov", "icon": "telegram", "text": "Telegram"}, {"href": "tel:+31629182760", "icon": "phone", "text": "Call Me"}],
+  "competencies": [
+    {
+      "title": "API Development (RESTful)",
+      "description": "You have experience in designing and implementing RESTful APIs for web applications, allowing for seamless communication between different components."
+    },
+    {
+      "title": "Backend Development (Laravel/Lumen, NestJS)",
+      "description": "Proficient in backend development using Laravel and Lumen frameworks for PHP, as well as NestJS for Node.js, enabling you to build robust and scalable server-side logic."
+    },
+    {
+      "title": "Telegram Bot Development",
+      "description": "Skilled in developing Telegram bots, expanding your capabilities beyond traditional web development to include integrations with messaging platforms."
+    },
+    {
+      "title": "Third-Party API Integrations",
+      "description": "Capable of integrating various third-party APIs into web applications, enhancing functionality and providing additional services to users."
+    },
+    {
+      "title": "Microservices Development",
+      "description": "Experienced in developing microservices architecture, allowing for modular and scalable application design."
+    },
+    {
+      "title": "Code Coverage and Testing (TDD, PHPUnit, Vitest, Jest)",
+      "description": "Proficient in implementing Test-Driven Development (TDD) practices and utilizing testing frameworks like PHPUnit, Vitest, and Jest to ensure code quality and reliability."
+    },
+    {
+      "title": "Automated Testing (PhantomJS, CasperJS, Puppeteer)",
+      "description": "Skilled in automated testing using tools like PhantomJS, CasperJS, and Puppeteer, streamlining the testing process and improving efficiency."
+    },
+    {
+      "title": "Documentation Writing (Swagger/OpenAPI, PHPDoc, JSDoc)",
+      "description": "Able to create comprehensive documentation using Swagger/OpenAPI for APIs, PHPDoc for PHP code, and JSDoc for JavaScript code, facilitating understanding and maintenance of projects."
+    }
+  ],
+  "portfolioItems": [
+    {
+      "url": "/portfolio/05ru.html",
+      "logo": "@images/portfolio/05ru/logo.png",
+      "logoAlt": "05.ru",
+      "title": "05.ru",
+      "description": "Laravel, Lumen, API, SaaS, PaaS, 15+ microservices, PostgreSQL, Docker, Kubernetes, Grafana, Kibana"
+    },
+    {
+      "url": "/portfolio/strikepro.html",
+      "logo": "@images/portfolio/strikepro/logo.png",
+      "logoAlt": "StrikePro",
+      "title": "Strikepro",
+      "description": "Laravel, Monolith, 1C integration, API, Dashboard, Modules"
+    },
+    {
+      "url": "/portfolio/rc_revolution.html",
+      "logo": "@images/portfolio/rc_revo/logo.jpg",
+      "logoAlt": "RC Revolution",
+      "title": "RC Revolution",
+      "description": "NestJS, NodeJS, TypeScript, Async, PostgreSQL, Monorepo"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+/* Social Icons Section Styles */
+#social-links-section
+  .social-icons
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr))
+    gap: 20px
+    justify-content: center
+
+    // Каждая иконка социальной сети
+    .social-icon
+      display: flex
+      justify-content: center
+      align-items: center /* Align items vertically center */
+      text-align: center
+
+      // Контейнер для иконки и текста
+      a
+        display: block
+        text-decoration: none
+        color: #343a40
+        transition: color 0.3s ease
+
+        // Иконка социальной сети
+        i
+          //font-size: 2rem
+          font-size: 5em
+      //width: 5em
+      //height: auto
+
+      // Анимация при наведении курсора
+      &:hover
+        transform: translateY(-5px)
+        a
+          color: #007bff // Изменение цвета текста при наведении
+
+/* Portfolio Section Styles */
+#portfolio
+  padding: 50px 0
+
+  .card
+    margin-bottom: 30px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    text-decoration: none
+
+  .card-img-top
+    height: 200px
+    object-fit: cover
+
+  .card-title
+    font-size: 1.25rem
+    font-weight: bold
+
+  .card-text
+    font-size: 0.875rem
+
+/* Skills Section Styles */
+#skills
+  .skill-grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr))
+    gap: 20px
+    justify-content: center
+
+  .skill
+    display: flex
+    justify-content: center
+    align-items: center /* Align items vertically center */
+    text-align: center
+
+  .skill img
+    width: 5em
+    height: auto
+
+  section h2
+    text-align: center

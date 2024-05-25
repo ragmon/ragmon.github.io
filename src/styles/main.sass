@@ -1,0 +1,39 @@
+@import "base/reset"
+@import "base/typography"
+@import "base/variables"
+@import "base/utilities"
+
+@import "components/navbar"
+
+@import "pages/index"
+@import "pages/project"
+
+body
+  padding-top: $navbar-space
+  overflow-x: hidden
+
+section
+  h2
+    text-align: left
+
+/* Common Section Styles */
+section
+  padding: 50px 0
+
+section:nth-child(even)
+  background-color: #f8f9fa
+
+section:nth-child(odd)
+  background-color: #f0f0f0
+
+/* Footer Styles */
+footer
+  background-color: #343a40
+  color: #fff
+  padding: 20px 0
+  text-align: center
+
+h2
+  margin-bottom: 3rem
+
+

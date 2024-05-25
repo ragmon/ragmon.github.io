@@ -1,0 +1,14 @@
+nav.navbar.navbar-expand-lg.fixed-top.navbar-light
+    .container
+        if showBackButton
+            button.btn.btn-outline-secondary.btn-back(onclick='window.history.back()')
+                i.fa.fa-arrow-left
+        a.navbar-brand(href="/") Arthur Rahimov
+        if menuItems
+            button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.ms-auto
+                    each item in menuItems
+                        li.nav-item
+                            a.nav-link(href=item.href)= item.title
