@@ -1,6 +1,6 @@
 const path = require('path');
 const PugPlugin = require('pug-plugin');
-// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == 'production';
 
@@ -74,9 +74,14 @@ const config = {
                 ]
             }
         }),
-        // new MiniCssExtractPlugin({
-        //     filename: 'assets/css/[name].[contenthash:8].css',
-        // })
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'public'),
+                    to: path.resolve(__dirname, 'dist')
+                }
+            ]
+        }),
     ],
     module: {
         rules: [

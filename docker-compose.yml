@@ -2,10 +2,19 @@ version: "3"
 
 services:
   compiler:
-    image: node:22
+    build:
+      dockerfile: ./docker/compiler/Dockerfile
+      args:
+        GIT_USER_EMAIL: ${GIT_USER_EMAIL}
+        GIT_USER_NAME: ${GIT_USER_NAME}
     volumes:
       - .:/app
     working_dir: /app
     ports:
       - "8080:8080"
-    command: sh -c "npm i && npm run serve"
+#    command: sh -c "npm i && npm run serve"
+    env_file: .env
+#    environment:
+#      - USERNAME=${USERNAME}
+#      - GITHUB_TOKEN=${GITHUB_TOKEN}
+#      - REPOSITORY=${REPOSITORY}

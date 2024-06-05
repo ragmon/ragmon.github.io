@@ -14,13 +14,18 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "dotenv -e .env -- gh-pages -c $DOMAIN -d dist -r https://$GITHUB_TOKEN@github.com/$USERNAME/$REPOSITORY.git"
   },
   "author": "Arthur Rahimov",
   "license": "MIT",
   "devDependencies": {
     "@webpack-cli/generators": "^3.0.7",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.1",
+    "dotenv-cli": "^7.4.2",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0",
     "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "^2.9.0",
