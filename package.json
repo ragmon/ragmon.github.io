@@ -16,7 +16,7 @@
     "watch": "webpack --watch",
     "serve": "webpack serve",
     "predeploy": "npm run build",
-    "deploy": "dotenv -e .env -- gh-pages -c $DOMAIN -d dist -r https://$GITHUB_TOKEN@github.com/$USERNAME/$REPOSITORY.git"
+    "deploy": "dotenv -e .env -- gh-pages --cname $DOMAIN -d dist -r https://$GITHUB_TOKEN@github.com/$USERNAME/$REPOSITORY.git"
   },
   "author": "Arthur Rahimov",
   "license": "MIT",
