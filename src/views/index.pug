@@ -19,7 +19,7 @@ mixin portfolio(project)
 
 mixin skill(skill)
     .skill
-        img(src=`@images/skills/${skill.toLowerCase()}.svg`, alt=skill)
+        img(src=`@images/skills/${skill.toLowerCase()}.svg`, alt=skill, title=skill)
 
 block content
     section#about
