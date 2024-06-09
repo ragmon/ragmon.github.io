@@ -1,44 +1,45 @@
 {
-  "title": "05.ru Marketplace",
-  "description": "\"05.ru\" is a chain of electronics and home appliance stores. As of today, the company operates 7 branches: 6 in the Republic of Dagestan (in Makhachkala, Khasavyurt, and Derbent) and 1 store in Moscow. The \"05.ru\" online store provides delivery services across Russia.",
-  "date": "22.06.2020",
-  "stack": ["PHP", "Laravel", "Lumen", "PostgreSQL", "Temporal", "Microservices", "MySQL", "Docker", "VueJS", "Apprise", "Swagger", "OpenAPI", "Excel", "JavaScript", "Bash", "CI/CD", "RabbitMQ"],
+  "showBackButton": true,
+  "menuItems": null,
+  "title": "Strikepro",
+  "description": "The Strike Pro website serves as the digital hub for one of the world’s premier fishing tackle brands. Established in 1973, Strike Pro has evolved from a small producer on Taiwan's shores to a leading name in the global fishing community. The website highlights their extensive product line, including precision-engineered lures, soft baits, and fishing accessories, all designed for both amateur and professional anglers. Each product is crafted with meticulous attention to detail, ensuring superior performance and durability.",
+  "date": "24.01.2024",
+  "stack": ["PHP", "Laravel", "MySQL", "1C", "Monorepo", "API", "RESTful", "Git", "Swagger", "OpenAPI", "JavaScript", "Bash", "CI/CD", "TypeORM", "Markdown"],
   "responsibilities": [
-    "Conducted research, gathered information, and selected a set of technologies for the project development.",
-    "Engaged in backend PHP Laravel development, specifically focusing on API implementation.",
-    "Developed microservices as part of the project architecture.",
-    "Received requirements from analysts and translated them into technical tasks.",
-    "Took part in project architectural design alongside the architect.",
-    "Configured Docker environment to streamline the development process.",
-    "Developed CLI bash scripts to automate routine development processes within the company.",
-    "Implemented scripts for processing Excel documents.",
-    "Handled data processing and transformation tasks.",
-    "Configured CRON schedules for automated tasks.",
-    "Contributed to the project's Software as a Service (SaaS) and Platform as a Service (PaaS) aspects."
+    "Developed backend functionality for a project from the ground up using the Laravel framework.",
+    "Collaborated closely with the frontend developer to ensure seamless integration and functionality.",
+    "Designed and implemented RESTful APIs for the administrator panel to manage backend operations and data flow efficiently.",
+    "Engaged indirectly in the frontend development process, providing support and ensuring integration compatibility with the backend system.",
+    "Configured Docker environments to create consistent development and production setups, enhancing deployment efficiency and system stability.",
+    "Gathered detailed project requirements and formulated technical specifications for both backend and frontend development teams.",
+    "Integrated the system with the 1C enterprise resource planning (ERP) software, enabling smooth data exchange and process automation.",
+    "Implemented data import and export functionalities to and from the 1C system, ensuring accurate and reliable data transfer.",
+    "Designed and structured the database architecture to support scalable and efficient data management and retrieval processes.",
+    "Established Continuous Integration and Continuous Deployment (CI/CD) pipelines for both backend and frontend, automating the build, test, and deployment processes."
   ],
   "role": "Backend developer",
-  "type": "Marketplace",
-  "url": "https://05.ru/",
+  "type": "Catalog",
+  "url": "https://strikepro.ru/",
   "logo": {
-    "src": "@images/portfolio/05ru/logo.png",
-    "alt": "05ru"
+    "src": "@images/portfolio/strikepro/logo.png",
+    "alt": "strikepro"
   },
   "photos": [
     {
-      "url": "@images/portfolio/05ru/1.png",
-      "alt": "05ru-1"
+      "url": "@images/portfolio/strikepro/1.png",
+      "alt": "strikepro-1"
     },
     {
-      "url": "@images/portfolio/05ru/2.png",
-      "alt": "05ru-2"
+      "url": "@images/portfolio/strikepro/2.png",
+      "alt": "strikepro-2"
     },
     {
-      "url": "@images/portfolio/05ru/3.png",
-      "alt": "05ru-3"
+      "url": "@images/portfolio/strikepro/3.png",
+      "alt": "strikepro-3"
     },
     {
-      "url": "@images/portfolio/05ru/4.png",
-      "alt": "05ru-4"
+      "url": "@images/portfolio/strikepro/4.png",
+      "alt": "strikepro-4"
     }
   ]
 }

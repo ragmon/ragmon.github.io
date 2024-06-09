@@ -12,7 +12,7 @@ services:
     working_dir: /app
     ports:
       - "8080:8080"
-#    command: sh -c "npm i && npm run serve"
+    command: sh -c "npm i && npm run serve"
     env_file: .env
 #    environment:
 #      - USERNAME=${USERNAME}

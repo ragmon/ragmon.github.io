@@ -10,3 +10,6 @@ ARG GIT_USER_NAME
 RUN git config --global user.email $GIT_USER_EMAIL  \
     && git config --global user.name $GIT_USER_NAME
 
+#CMD ["sh -c", "npm i && npm run serve"]
+
+#EXPOSE 8080

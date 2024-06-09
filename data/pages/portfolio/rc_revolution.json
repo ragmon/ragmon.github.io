@@ -1,44 +1,50 @@
 {
-  "title": "05.ru Marketplace",
-  "description": "\"05.ru\" is a chain of electronics and home appliance stores. As of today, the company operates 7 branches: 6 in the Republic of Dagestan (in Makhachkala, Khasavyurt, and Derbent) and 1 store in Moscow. The \"05.ru\" online store provides delivery services across Russia.",
+  "showBackButton": true,
+  "menuItems": null,
+  "title": "RC Revolution",
+  "description": "\"RC Revolution\" is a fun racing game where you drive radio-controlled cars. In the game, you can compete with others on exciting tracks, perform cool stunts, and customize your car. The game is available on Steam and offers both single-player and multiplayer modes. You can choose from various cars and race on different tracks, aiming to be the fastest and perform the best tricks. It’s a great game for fans of racing and RC cars!",
   "date": "22.06.2020",
   "stack": ["PHP", "Laravel", "Lumen", "PostgreSQL", "Temporal", "Microservices", "MySQL", "Docker", "VueJS", "Apprise", "Swagger", "OpenAPI", "Excel", "JavaScript", "Bash", "CI/CD", "RabbitMQ"],
   "responsibilities": [
-    "Conducted research, gathered information, and selected a set of technologies for the project development.",
-    "Engaged in backend PHP Laravel development, specifically focusing on API implementation.",
-    "Developed microservices as part of the project architecture.",
-    "Received requirements from analysts and translated them into technical tasks.",
-    "Took part in project architectural design alongside the architect.",
-    "Configured Docker environment to streamline the development process.",
-    "Developed CLI bash scripts to automate routine development processes within the company.",
-    "Implemented scripts for processing Excel documents.",
-    "Handled data processing and transformation tasks.",
-    "Configured CRON schedules for automated tasks.",
-    "Contributed to the project's Software as a Service (SaaS) and Platform as a Service (PaaS) aspects."
+    "Developed the backend architecture of the game using the NestJS framework and TypeScript. My work involved managing game data, handling player interactions, and ensuring smooth server-side operations.",
+    "Configured continuous integration and continuous deployment (CI/CD) pipelines, enabling seamless updates and automated deployment of the game to Heroku. This streamlined our release process and ensured rapid delivery of new features.",
+    "Created comprehensive API documentation using OpenAPI and Swagger. This documentation served as a valuable resource for other developers, providing clear guidelines on how to integrate and utilize our backend services.",
+    "Performed extensive testing and debugging to identify and resolve issues within the backend. My efforts ensured that the backend was robust and worked in harmony with the game's frontend.",
+    "Worked closely with the Unity development team to coordinate the integration of backend services with the game client. Our collaboration was crucial for achieving seamless gameplay and a cohesive user experience.",
+    "Conducted in-depth research to identify and select the optimal technologies for the project. This involved evaluating tools and frameworks that would enhance performance and scalability.",
+    "Set up and managed Docker environments to create consistent development and production setups. This included configuring environments for product deployment and testing, which improved system stability and deployment efficiency.",
+    "Wrote and implemented bash scripts to automate various development and deployment processes. These scripts significantly increased our workflow efficiency by automating repetitive tasks.",
+    "Contributed to the research and development of artificial intelligence for the car bots within the game. This involved creating intelligent and realistic bot behavior to enhance the gaming experience.",
+    "Developed and executed tests using Vitest to ensure code quality and reliability. My testing efforts were crucial in maintaining high standards and minimizing bugs in the codebase.",
+    "Implemented database seeders to populate the system with test data. This was essential for simulating various scenarios during testing and ensuring the database was prepared for real-world use."
   ],
   "role": "Backend developer",
-  "type": "Marketplace",
-  "url": "https://05.ru/",
+  "type": "Game Backend",
+  "url": "https://store.steampowered.com/app/2347040/RC_Revolution/",
   "logo": {
-    "src": "@images/portfolio/05ru/logo.png",
-    "alt": "05ru"
+    "src": "@images/portfolio/rc_revo/logo.jpg",
+    "alt": "rc_revo-logo"
   },
   "photos": [
     {
-      "url": "@images/portfolio/05ru/1.png",
-      "alt": "05ru-1"
+      "url": "@images/portfolio/rc_revo/1.jpg",
+      "alt": "rc_revo-1"
     },
     {
-      "url": "@images/portfolio/05ru/2.png",
-      "alt": "05ru-2"
+      "url": "@images/portfolio/rc_revo/2.jpg",
+      "alt": "rc_revo-2"
     },
     {
-      "url": "@images/portfolio/05ru/3.png",
-      "alt": "05ru-3"
+      "url": "@images/portfolio/rc_revo/3.jpg",
+      "alt": "rc_revo-3"
     },
     {
-      "url": "@images/portfolio/05ru/4.png",
-      "alt": "05ru-4"
+      "url": "@images/portfolio/rc_revo/4.jpg",
+      "alt": "rc_revo-4"
+    },
+    {
+      "url": "@images/portfolio/rc_revo/5.jpg",
+      "alt": "rc_revo-5"
     }
   ]
 }

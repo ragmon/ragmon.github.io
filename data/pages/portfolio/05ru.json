@@ -4,7 +4,7 @@
   "title": "05.ru Marketplace",
   "description": "\"05.ru\" is a chain of electronics and home appliance stores. As of today, the company operates 7 branches: 6 in the Republic of Dagestan (in Makhachkala, Khasavyurt, and Derbent) and 1 store in Moscow. The \"05.ru\" online store provides delivery services across Russia.",
   "date": "22.06.2020",
-  "stack": ["PHP", "Laravel", "Lumen", "PostgreSQL", "Temporal", "Microservices", "MySQL", "Docker", "VueJS", "Apprise", "Swagger", "OpenAPI", "Excel", "JavaScript", "Bash", "CI/CD", "RabbitMQ"],
+  "stack": ["PHP", "Laravel", "Lumen", "PostgreSQL", "Temporal", "Microservices", "MySQL", "Docker", "VueJS", "Apprise", "Swagger", "OpenAPI", "Excel", "JavaScript", "Bash", "CI/CD", "RabbitMQ", "Git"],
   "responsibilities": [
     "Conducted research, gathered information, and selected a set of technologies for the project development.",
     "Engaged in backend PHP Laravel development, specifically focusing on API implementation.",
