@@ -15,6 +15,7 @@ const config = {
     resolve: {
         extensions: ['.tsx', '.ts', '.jsx', '.js', '.scss', '.sass', '.css'],
         alias: {
+            '@src': path.resolve(__dirname, './src'),
             '@assets': path.resolve(__dirname, './assets'),
             '@images': path.resolve(__dirname, './assets/images'),
             '@styles': path.resolve(__dirname, './src/styles'),
@@ -40,19 +41,19 @@ const config = {
             pretty: true,
             entry: {
                 'index': {
-                    import: './src/views/index.pug',
+                    import: './src/pug/views/index.pug',
                     data: require('./data/pages/index.json')
                 },
                 'portfolio/05ru': {
-                    import: './src/layouts/portfolio.pug',
+                    import: './src/pug/layouts/portfolio.pug',
                     data: require('./data/pages/portfolio/05ru.json')
                 },
                 'portfolio/strikepro': {
-                    import: './src/layouts/portfolio.pug',
+                    import: './src/pug/layouts/portfolio.pug',
                     data: require('./data/pages/portfolio/strikepro.json')
                 },
                 'portfolio/rc_revolution': {
-                    import: './src/layouts/portfolio.pug',
+                    import: './src/pug/layouts/portfolio.pug',
                     data: require('./data/pages/portfolio/rc_revolution.json')
                 },
             },

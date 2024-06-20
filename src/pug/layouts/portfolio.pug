@@ -1,0 +1,35 @@
+extends default
+
+mixin skill(skill)
+    .skill
+        img(src=`@images/skills/${skill.toLowerCase()}.svg`, alt=skill, title=skill)
+
+block content
+    section#project
+        .container
+            h1.project-title= title
+            .project-header
+                img(src=logo.src, alt=logo.alt).project-logo
+                .project-info
+                    h2 Role
+                    p.role= role
+                    h2 Type
+                    p.type= type
+                    h2 Date of Implementation
+                    p.date= date
+            h2.project-section-title Description
+            p.project-description= description
+            h2.project-section-title Stack
+            ul.stack
+                each skill in stack
+                    li= skill
+            h2.project-section-title Responsibilities
+            ul.responsibilities
+                each responsibility in responsibilities
+                    li= responsibility
+            a.visit-project(href=url, target="_blank") Visit Project Website
+            h2.project-section-title Gallery
+            .pswp-gallery
+                each photo in photos
+                    a(href=photo.url, target="_blank", data-caption=photo.alt, data-cropped="true", data-pswp-width="700", data-pswp-height="500")
+                        img(src=photo.url, alt="")
