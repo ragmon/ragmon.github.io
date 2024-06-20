@@ -1,14 +1,107 @@
-nav.navbar.navbar-expand-lg.fixed-top.navbar-light
-    .container
-        if showBackButton
-            button.btn.btn-outline-secondary.btn-back(onclick='window.history.back()')
-                i.fa.fa-arrow-left
-        a.navbar-brand(href="/") Arthur Rahimov
-        if menuItems
-            button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
-                span.navbar-toggler-icon
-            #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.ms-auto
-                    each item in menuItems
-                        li.nav-item
-                            a.nav-link(href=item.href)= item.title
+//nav.navbar.navbar-expand-lg.fixed-top.navbar-light
+//    .container
+//        if showBackButton
+//            button.btn.btn-outline-secondary.btn-back(onclick='window.history.back()')
+//                i.fa.fa-arrow-left
+//        a.navbar-brand(href="/") Arthur Rahimov
+//        if menuItems
+//            button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+//                span.navbar-toggler-icon
+//            #navbarSupportedContent.collapse.navbar-collapse
+//                ul.navbar-nav.ms-auto
+//                    each item in menuItems
+//                        li.nav-item
+//                            a.nav-link(href=item.href)= item.title
+//                // Социальные ссылки
+//                ul.navbar-nav.ms-auto.social-links
+//                    li.nav-item
+//                        a.nav-link(href='https://github.com/your-profile', target='_blank')
+//                            i.fab.fa-github
+//                    li.nav-item
+//                        a.nav-link(href='https://linkedin.com/in/your-profile', target='_blank')
+//                            i.fab.fa-linkedin
+//                    li.nav-item
+//                        a.nav-link(href='https://wa.me/your-phone-number', target='_blank')
+//                            i.fab.fa-whatsapp
+//                    li.nav-item
+//                        a.nav-link(href='https://t.me/your-username', target='_blank')
+//                            i.fab.fa-telegram
+//                    li.nav-item
+//                        a.nav-link(href='tel:+1234567890')
+//                            i.fas.fa-phone
+
+////- views/components/header.pug
+//
+//nav.navbar.navbar-expand-lg.navbar-light.bg-light
+//    .container
+//        a.navbar-brand(href='/') Arthur Rahimov
+//        //if menuItems
+//        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+//            span.navbar-toggler-icon
+//        .collapse.navbar-collapse#navbarNav
+//            ul.navbar-nav.me-auto
+//                li.nav-item
+//                    a.nav-link.active(href='/', aria-current='page') Home
+//                li.nav-item
+//                    a.nav-link(href='/portfolio') Portfolio
+//                li.nav-item
+//                    a.nav-link(href='/about') About
+//                li.nav-item
+//                    a.nav-link(href='/contact') Contact
+//
+//            // Социальные ссылки
+//            ul.navbar-nav.ms-auto.social-links
+//                li.nav-item
+//                    a.nav-link(href='https://github.com/your-profile', target='_blank')
+//                        i.fab.fa-github
+//                li.nav-item
+//                    a.nav-link(href='https://linkedin.com/in/your-profile', target='_blank')
+//                        i.fab.fa-linkedin
+//                li.nav-item
+//                    a.nav-link(href='https://wa.me/your-phone-number', target='_blank')
+//                        i.fab.fa-whatsapp
+//                li.nav-item
+//                    a.nav-link(href='https://t.me/your-username', target='_blank')
+//                        i.fab.fa-telegram
+//                li.nav-item
+//                    a.nav-link(href='tel:+1234567890')
+//                        i.fas.fa-phone
+
+
+
+//- views/components/header.pug
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  .container-fluid
+    a.navbar-brand(href='/')
+      img(src='/path/to/logo.png', alt='Site Logo', class='navbar-logo')
+    button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse#navbarNav
+      ul.navbar-nav.me-auto
+        li.nav-item
+          a.nav-link(href='/', aria-current='page') Home
+        li.nav-item
+          a.nav-link(href='/portfolio') Portfolio
+        li.nav-item
+          a.nav-link(href='/about') About
+        li.nav-item
+          a.nav-link(href='/contact') Contact
+
+      // Социальные ссылки
+      ul.navbar-nav.ms-auto.social-links
+        li.nav-item
+          a.nav-link(href='https://github.com/your-profile', target='_blank')
+            i.fab.fa-github
+        li.nav-item
+          a.nav-link(href='https://linkedin.com/in/your-profile', target='_blank')
+            i.fab.fa-linkedin
+        li.nav-item
+          a.nav-link(href='https://wa.me/your-phone-number', target='_blank')
+            i.fab.fa-whatsapp
+        li.nav-item
+          a.nav-link(href='https://t.me/your-username', target='_blank')
+            i.fab.fa-telegram
+        li.nav-item
+          a.nav-link(href='tel:+1234567890')
+            i.fas.fa-phone

@@ -5,11 +5,6 @@ mixin competency(competency)
         h6= competency.title
         p= competency.description
 
-mixin socialLink(link)
-    .social-icon
-        a(href=link.href, target="_blank")
-            i(class=`fab fa-${link.icon}`)
-
 mixin portfolio(project)
     a(href=project.url).card
         img.card-img-top(src=project.logo, alt=project.logoAlt)
@@ -55,14 +50,13 @@ block content
 
     section#skills
         .container
-            h2 Skills
             .skill-grid
                 each skill in skills
                     +skill(skill)
 
-    section#social-links-section
-        .container
-            //h2 Links
-            .social-icons
-                each link in socialLinks
-                    +socialLink(link)
+    //section#social-links-section
+    //    .container
+    //        //h2 Links
+    //        .social-icons
+    //            each link in socialLinks
+    //                +socialLink(link)

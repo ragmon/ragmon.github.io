@@ -1,19 +1,67 @@
 .navbar
-  transition: background-color 0.3s ease-in-out
-  background-color: #343a40
+  background-color: #eeeeee !important
+  padding: 1rem
+  position: fixed
+  width: 100%
+  box-shadow: 0 4px 2px -2px #e1e1e1
+  z-index: 100
 
-  .navbar-brand
-    font-weight: bold
-    color: #fff
+  .navbar-logo
+    max-height: 40px
+    transition: all 0.3s ease
+
     &:hover
-      color: #fff
+      transform: scale(1.1)
 
-  .navbar-nav .nav-link
-    font-weight: 500
-    color: #fff
-    &:hover
-      text-decoration: underline
-      color: #007bff
+  .navbar-toggler
+    border: none
+    &:focus
+      outline: none
 
-  .btn-back
-    margin-right: 1em
+  .navbar-nav
+    .nav-item
+      .nav-link
+        color: #333
+        transition: color 0.3s
+
+        &:hover
+          color: #007bff
+
+  // Социальные ссылки
+  .social-links
+    display: flex
+    gap: 15px
+    border-left-color: #e1e1e1
+    border-left-width: 1px
+    padding-left: 1.5em
+    border-left-style: outset
+
+    .nav-link
+      display: flex
+      align-items: center
+      font-size: 1.5rem
+      color: #555
+      transition: color 0.3s, transform 0.3s
+
+      &:hover
+        color: #007bff
+        transform: scale(1.1)
+
+      i
+        margin-right: 5px
+
+// Мобильные стили
+@media (max-width: 767px)
+  .navbar
+    .social-links
+      border-left: none
+      display: grid
+      grid-template-columns: repeat(auto-fit, minmax(0em, 1fr))
+      justify-content: center
+      border-top: 1px solid #000000
+
+      li
+        text-align: center
+
+
+
