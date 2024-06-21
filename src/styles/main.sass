@@ -3,8 +3,10 @@
 // font-awesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome"
 @import "~@fortawesome/fontawesome-free/scss/solid"
-@import "~@fortawesome/fontawesome-free/scss/regular" // Include only if needed
-@import "~@fortawesome/fontawesome-free/scss/brands"  // Include only if needed
+@import "~@fortawesome/fontawesome-free/scss/regular"
+// Include only if needed
+@import "~@fortawesome/fontawesome-free/scss/brands"
+// Include only if needed
 
 @import "base/reset"
 @import "base/typography"
@@ -17,9 +19,9 @@
 @import "pages/index"
 @import "pages/project"
 
-//body
-  //padding-top: $navbar-space
-  //overflow-x: hidden
+body
+  padding-top: $navbar-space
+//overflow-x: hidden
 
 section
   h2
@@ -27,13 +29,15 @@ section
 
 /* Common Section Styles */
 section
-  padding: 5em 0
+  padding: 6em 0
 
 section:nth-child(even)
   background-color: #f8f9fa
 
 section:nth-child(odd)
   background-color: #f0f0f0
+  ////background: repeating-linear-gradient(-45deg, #000 0px, #000 4px, transparent 4px, transparent 12px)
+  //background: repeating-linear-gradient(transparent, transparent 20 px, yellowgreen 22 px), repeating-linear-gradient(90 deg, transparent, transparent 20 px, yellowgreen 22 px)
 
 /* Footer Styles */
 footer
@@ -45,4 +49,6 @@ footer
 h2
   margin-bottom: 3rem
 
-
+@media (max-width: 767px)
+  section
+    padding: 3em 0
