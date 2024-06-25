@@ -19,21 +19,20 @@ mixin skill(skill)
 block content
     section#about
         .container
-            .row.justify-content-center
-                .d-flex.align-items-center
-                    .flex-shrink-0
-                        img(src="@images/_arthur_rahimov-avatar.jpg", alt="", class="")
-                    .flex-grow-1.ms-5
-                        h2 About
+            .row.align-items-center
+                .col-lg-4.col-md-5.text-center
+                    .about-image
+                        img(src="@images/_arthur_rahimov-avatar.jpg", alt="Arthur Rahimov", class="rounded-circle img-fluid shadow-lg")
+                .col-lg-8.col-md-7
+                    .about-text-box
+                        //h2.text-center.text-md-start About
                         p.text-muted
                             | With over 8 years of freelance experience, I specialize in backend web development using PHP,
                             | Laravel, Lumen, NodeJS, NestJS, TypeScript, and JavaScript. My focus is on delivering high-quality work
                             | efficiently, whether it's developing high-traffic systems, microservices architecture, or SaaS/PaaS solutions. I
                             | prioritize both quality and speed, leveraging existing solutions when feasible, and can also take on
-                            | Team
-                            | Lead responsibilities. Constantly evolving, I stay updated with industry trends, offering
-                            | comprehensive
-                            | solutions that include design, architecture, and ongoing support.
+                            | Team Lead responsibilities. Constantly evolving, I stay updated with industry trends, offering
+                            | comprehensive solutions that include design, architecture, and ongoing support.
 
     section#portfolio
         .container

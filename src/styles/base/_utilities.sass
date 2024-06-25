@@ -3,3 +3,8 @@
   display: flex
   justify-content: center
   align-items: center
+
+@mixin background-dots($dotColor: #dedede, $dotSpace: 1.3em, $bgPosition: 1em)
+  background-image: radial-gradient($dotColor 1px, transparent 0)
+  background-size: $dotSpace $dotSpace
+  background-position: $bgPosition
