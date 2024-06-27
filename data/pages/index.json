@@ -1,6 +1,123 @@
 {
-  "skills": ["PHP", "JavaScript", "MySQL", "PostgreSQL", "TypeScript", "API", "Docker", "Github", "Grafana", "Html", "CSS", "Laravel", "NestJS", "NPM", "OpenAI", "PHPStorm", "VueJS", "Gitlab"],
-  "socialLinks": [{"href": "https://github.com/ragmon", "icon": "github", "text": "GitHub"}, {"href": "https://www.linkedin.com/in/arthur-rahimov/", "icon": "linkedin", "text": "Linkedin"}, {"href": "https://wa.me/+31629182760", "icon": "whatsapp", "text": "WhatsApp"}, {"href": "https://t.me/arthur_rahimov", "icon": "telegram", "text": "Telegram"}, {"href": "tel:+31629182760", "icon": "phone", "text": "Call Me"}],
+  "skills": [
+    {
+      "name": "PHP",
+      "alt": "PHP Logo",
+      "url": "https://www.php.net/"
+    },
+    {
+      "name": "JavaScript",
+      "alt": "JavaScript Logo",
+      "url": "https://www.javascript.com/"
+    },
+    {
+      "name": "MySQL",
+      "alt": "MySQL Logo",
+      "url": "https://www.mysql.com/"
+    },
+    {
+      "name": "PostgreSQL",
+      "alt": "PostgreSQL Logo",
+      "url": "https://www.postgresql.org/"
+    },
+    {
+      "name": "TypeScript",
+      "alt": "TypeScript Logo",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "API",
+      "alt": "API Icon",
+      "url": "https://en.wikipedia.org/wiki/API"
+    },
+    {
+      "name": "Docker",
+      "alt": "Docker Logo",
+      "url": "https://www.docker.com/"
+    },
+    {
+      "name": "Github",
+      "alt": "Github Logo",
+      "url": "https://github.com/"
+    },
+    {
+      "name": "Grafana",
+      "alt": "Grafana Logo",
+      "url": "https://grafana.com/"
+    },
+    {
+      "name": "Html",
+      "alt": "HTML Logo",
+      "url": "https://html.spec.whatwg.org/"
+    },
+    {
+      "name": "CSS",
+      "alt": "CSS Logo",
+      "url": "https://www.w3.org/Style/CSS/Overview.en.html"
+    },
+    {
+      "name": "Laravel",
+      "alt": "Laravel Logo",
+      "url": "https://laravel.com/"
+    },
+    {
+      "name": "NestJS",
+      "alt": "NestJS Logo",
+      "url": "https://nestjs.com/"
+    },
+    {
+      "name": "NPM",
+      "alt": "NPM Logo",
+      "url": "https://www.npmjs.com/"
+    },
+    {
+      "name": "OpenAI",
+      "alt": "OpenAI Logo",
+      "url": "https://www.openai.com/"
+    },
+    {
+      "name": "PHPStorm",
+      "alt": "PHPStorm Logo",
+      "url": "https://www.jetbrains.com/phpstorm/"
+    },
+    {
+      "name": "VueJS",
+      "alt": "VueJS Logo",
+      "url": "https://vuejs.org/"
+    },
+    {
+      "name": "Gitlab",
+      "alt": "Gitlab Logo",
+      "url": "https://about.gitlab.com/"
+    }
+  ],
+  "socialLinks": [
+    {
+      "href": "https://github.com/ragmon",
+      "icon": "github",
+      "text": "GitHub"
+    },
+    {
+      "href": "https://www.linkedin.com/in/arthur-rahimov/",
+      "icon": "linkedin",
+      "text": "Linkedin"
+    },
+    {
+      "href": "https://wa.me/+31629182760",
+      "icon": "whatsapp",
+      "text": "WhatsApp"
+    },
+    {
+      "href": "https://t.me/arthur_rahimov",
+      "icon": "telegram",
+      "text": "Telegram"
+    },
+    {
+      "href": "tel:+31629182760",
+      "icon": "phone",
+      "text": "Call Me"
+    }
+  ],
   "competencies": [
     {
       "title": "API Development (RESTful)",

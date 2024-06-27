@@ -13,8 +13,8 @@ mixin portfolio(project)
             p.card-text= project.description
 
 mixin skill(skill)
-    .skill
-        img(src=`@images/skills/${skill.toLowerCase()}.svg`, alt=skill, title=skill)
+    a.skill(href=skill.url, target="_blank")
+        img(src=`@images/skills/${skill.name.toLowerCase()}.svg`, alt=skill.alt || name, title=skill.name)
 
 block content
     section#about
@@ -25,15 +25,21 @@ block content
                         img(src="@images/_arthur_rahimov-avatar.jpg", alt="Arthur Rahimov", class="rounded-circle img-fluid shadow-lg")
                 .col-lg-8.col-md-7
                     .about-text-box
-                        //h2.text-center.text-md-start About
-                        p.text-muted
-                            | With over 8 years of freelance experience, I specialize in backend web development using PHP,
-                            | Laravel, Lumen, NodeJS, NestJS, TypeScript, and JavaScript. My focus is on delivering high-quality work
-                            | efficiently, whether it's developing high-traffic systems, microservices architecture, or SaaS/PaaS solutions. I
-                            | prioritize both quality and speed, leveraging existing solutions when feasible, and can also take on
-                            | Team Lead responsibilities. Constantly evolving, I stay updated with industry trends, offering
-                            | comprehensive solutions that include design, architecture, and ongoing support.
-
+                        h2.text-center.text-md-start About
+                        // Блоки сообщений
+                        .message-container
+                            .message-box(data-delay="1")
+                                p.text-muted
+                                    | With over 8 years of freelance experience, I specialize in backend web development using PHP,
+                                    | Laravel, Lumen, NodeJS, NestJS, TypeScript, and JavaScript.
+                            .message-box(data-delay="2")
+                                p.text-muted
+                                    | My focus is on delivering high-quality work efficiently, whether it's developing high-traffic systems,
+                                    | microservices architecture, or SaaS/PaaS solutions.
+                            .message-box(data-delay="3")
+                                p.text-muted
+                                    | I prioritize both quality and speed, leveraging existing solutions when feasible, and can also take on
+                                    | Team Lead responsibilities.
     section#portfolio
         .container
             h2 Portfolio
@@ -55,10 +61,3 @@ block content
             .skill-grid
                 each skill in skills
                     +skill(skill)
-
-    //section#social-links-section
-    //    .container
-    //        //h2 Links
-    //        .social-icons
-    //            each link in socialLinks
-    //                +socialLink(link)

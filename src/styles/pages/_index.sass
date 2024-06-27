@@ -20,18 +20,33 @@
       margin-bottom: 20px
       font-weight: 700
 
+    .message-container
+      display: flex
+      flex-direction: column
+      gap: 15px
+
+    .message-box
+      padding: 10px 20px
+      background-color: #ffffff
+      border-radius: 5px
+      box-shadow: #e6e6e6 3px 3px
+      // opacity: 0
+      transform: translateY(20px)
+      animation: fadeInUp 0.8s forwards
+      animation-delay: attr(data-delay) s
+
     p
       line-height: 1.6
       font-size: 1rem
       margin-bottom: 0
-      text-align: right
 
 @media (max-width: 767px)
   #about
     .about-text-box
-      p
-        text-align: center
-
+      .message-container
+        .message-box
+          font-size: 0.875rem
+          padding: 10px
 
 /* Social Icons Section Styles */
 #social-links-section
