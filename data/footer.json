@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Privacy Policy",
+    "href": "/legal/privacy-policy.html",
+    "column": 1,
+    "target": "_self"
+  },
+  {
+    "title": "Terms of Use",
+    "href": "/legal/terms-of-use.html",
+    "column": 1,
+    "target": "_self"
+  },
+  {
+    "title": "Cookie Policy",
+    "href": "/legal/cookie-policy.html",
+    "column": 1,
+    "target": "_self"
+  }
+]

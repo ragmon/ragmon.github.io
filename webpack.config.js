@@ -5,6 +5,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const isProduction = process.env.NODE_ENV == 'production';
 
 const menuItems = require('./data/menu.json');
+const footerLinks = require('./data/footer.json');
 
 const config = {
     entry: './src/index.ts',
@@ -56,9 +57,22 @@ const config = {
                     import: './src/pug/layouts/portfolio.pug',
                     data: require('./data/pages/portfolio/rc_revolution.json')
                 },
+                'legal/index': {
+                    import: './src/pug/views/legal/index.pug'
+                },
+                'legal/privacy-policy': {
+                    import: './src/pug/views/legal/privacy-policy.pug'
+                },
+                'legal/terms-of-use': {
+                    import: './src/pug/views/legal/terms-of-use.pug'
+                },
+                'legal/cookie-policy': {
+                    import: './src/pug/views/legal/cookie-policy.pug'
+                }
             },
             data: {
                 menuItems,
+                footerLinks,
             },
             js: {
                 filename: 'assets/js/[name].[contenthash:8].js'
@@ -112,7 +126,7 @@ const config = {
                     'sass-loader',
                 ],
                 exclude: ['/node_modules/'],
-            },
+            }
         ],
     },
     stats: {

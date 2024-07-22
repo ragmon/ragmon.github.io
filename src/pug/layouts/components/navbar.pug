@@ -9,22 +9,11 @@ nav.navbar.navbar-expand-lg.fixed-top.navbar-light
                 span.navbar-toggler-icon
             #navbarSupportedContent.collapse.navbar-collapse
                 ul.navbar-nav
-                    each item in menuItems
+                    each item in menuItems.mainMenu
                         li.nav-item
                             a.nav-link(href=item.href)= item.title
                 ul.navbar-nav.ms-auto.social-links
-                    li.nav-item
-                        a.nav-link(href='https://github.com/your-profile', target='_blank')
-                            i.fab.fa-github
-                    li.nav-item
-                        a.nav-link(href='https://linkedin.com/in/your-profile', target='_blank')
-                            i.fab.fa-linkedin
-                    li.nav-item
-                        a.nav-link(href='https://wa.me/your-phone-number', target='_blank')
-                            i.fab.fa-whatsapp
-                    li.nav-item
-                        a.nav-link(href='https://t.me/your-username', target='_blank')
-                            i.fab.fa-telegram
-                    li.nav-item
-                        a.nav-link(href='tel:+1234567890')
-                            i.fas.fa-phone
+                    each link in menuItems.socialLinks
+                        li.nav-item
+                            a.nav-link(href=link.href, target='_blank')
+                                i(class=link.icon)

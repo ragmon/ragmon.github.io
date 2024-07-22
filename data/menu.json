@@ -1,22 +1,46 @@
-[
-  {
-    "href": "#about",
-    "title": "About"
-  },
-  {
-    "href": "#portfolio",
-    "title": "Portfolio"
-  },
-  {
-    "href": "#competencies",
-    "title": "Competencies"
-  },
-  {
-    "href": "#skills",
-    "title": "Skills"
-  },
-  {
-    "href": "#social-links",
-    "title": "Links"
-  }
-]
+{
+  "mainMenu": [
+    {
+      "href": "#about",
+      "title": "About"
+    },
+    {
+      "href": "#portfolio",
+      "title": "Portfolio"
+    },
+    {
+      "href": "#competencies",
+      "title": "Competencies"
+    },
+    {
+      "href": "#skills",
+      "title": "Skills"
+    }
+  ],
+  "socialLinks": [
+    {
+      "href": "https://github.com/ragmon",
+      "icon": "fab fa-github"
+    },
+    {
+      "href": "https://www.linkedin.com/in/arthur-rahimov/",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "href": "https://wa.me/31629182760",
+      "icon": "fab fa-whatsapp"
+    },
+    {
+      "href": "https://t.me/arthur_rahimov",
+      "icon": "fab fa-telegram"
+    },
+    {
+      "href": "tel:+31629182760",
+      "icon": "fas fa-phone"
+    },
+    {
+      "href": "mailto:arthur.ragimov@gmail.com",
+      "icon": "fas fa-envelope"
+    }
+  ]
+}

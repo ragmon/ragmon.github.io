@@ -16,6 +16,26 @@ mixin skill(skill)
     a.skill(href=skill.url, target="_blank")
         img(src=`@images/skills/${skill.name.toLowerCase()}.svg`, alt=skill.alt || name, title=skill.name)
 
+mixin footerLink(link)
+    a(href=link.href, target=link.target)= link.title
+
+mixin renderFooterLinks(footerLinks)
+    .col-md-3.footer-column
+        each link in footerLinks
+            +footerLink(link)
+    //- -
+    //-     const groupedLinks = {};
+    //-     footerLinks.forEach(link => {
+    //-         const column = link.column || 0;
+    //-         if (!groupedLinks[column]) groupedLinks[column] = [];
+    //-         groupedLinks[column].push(link);
+    //-     });
+    //-     const sortedColumns = Object.keys(groupedLinks).sort((a, b) => a - b);
+    //- each column in sortedColumns
+    //-     .col-md-3.footer-column
+    //-         each link in groupedLinks[column]
+    //-             +footerLink(link)
+
 block content
     section#about
         .container
@@ -61,3 +81,8 @@ block content
             .skill-grid
                 each skill in skills
                     +skill(skill)
+
+    section#footer-menu
+        .container
+            .row.justify-content-center.text-center
+                +renderFooterLinks(footerLinks)

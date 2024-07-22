@@ -5,13 +5,15 @@ html(lang="en")
         block head
             include components/head
     body
-        block navbar
-            include components/navbar
+        .wrapper
+            block navbar
+                include components/navbar
 
-        block content
+            .content
+                block content
 
-        block footer
-            include components/footer
+            block footer
+                include components/footer
 
     block scripts
         include components/scripts

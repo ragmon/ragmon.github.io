@@ -16,6 +16,20 @@
 
 @import "pages/index"
 @import "pages/project"
+@import "pages/legal"
+
+html, body
+  height: 100%
+  margin: 0
+  padding: 0
+
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100%
+
+.content
+  flex: 1
 
 body
   padding-top: $navbar-space
@@ -33,8 +47,6 @@ section:nth-child(even)
 
 section:nth-child(odd)
   background-color: #f0f0f0
-  ////background: repeating-linear-gradient(-45deg, #000 0px, #000 4px, transparent 4px, transparent 12px)
-  //background: repeating-linear-gradient(transparent, transparent 20 px, yellowgreen 22 px), repeating-linear-gradient(90 deg, transparent, transparent 20 px, yellowgreen 22 px)
 
 /* Footer Styles */
 footer
